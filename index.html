@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyoti Kumari - Professional Resume</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef2f7;
+            color: #202124;
+            line-height: 1.5;
+        }
+
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 25px auto;
+            background: #ffffff;
+            padding: 16mm 15mm;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        /* HEADER */
+        .header {
+            border-bottom: 2px solid #17365d;
+            padding-bottom: 12px;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            color: #17365d;
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .contact {
+            color: #5f6368;
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        .contact span {
+            margin-right: 8px;
+        }
+
+        .career-title {
+            margin-top: 10px;
+            background: #eaf2f8;
+            border-left: 5px solid #2f75b5;
+            color: #17365d;
+            padding: 8px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        /* SECTION */
+        .section {
+            margin-top: 18px;
+        }
+
+        .section-title {
+            color: #17365d;
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            border-bottom: 2px solid #d9e2f3;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        /* SUMMARY */
+        .summary {
+            font-size: 11px;
+            color: #333;
+            text-align: justify;
+        }
+
+        /* EXPERIENCE */
+        .experience {
+            margin-bottom: 12px;
+        }
+
+        .job-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: #202124;
+        }
+
+        .company {
+            color: #5f6368;
+            font-weight: 500;
+        }
+
+        .date {
+            color: #2f75b5;
+            font-size: 10px;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 18px;
+        }
+
+        li {
+            font-size: 10.5px;
+            margin-bottom: 4px;
+            color: #333;
+        }
+
+        /* EDUCATION */
+        .education-item {
+            display: grid;
+            grid-template-columns: 31% 23% 46%;
+            padding: 7px 0;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 10px;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .degree {
+            font-weight: 700;
+            color: #202124;
+        }
+
+        .edu-date {
+            color: #2f75b5;
+            font-weight: 600;
+        }
+
+        .institute {
+            color: #444;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .skill {
+            background: #f1f5f9;
+            border: 1px solid #d9e2f3;
+            color: #17365d;
+            padding: 5px 9px;
+            border-radius: 4px;
+            font-size: 9.5px;
+            font-weight: 600;
+        }
+
+        /* TECHNICAL SKILLS */
+        .technical {
+            font-size: 10.5px;
+            color: #333;
+        }
+
+        .technical strong {
+            color: #17365d;
+        }
+
+        /* PROJECT */
+        .project-title {
+            font-size: 11px;
+            font-weight: 700;
+            color: #202124;
+        }
+
+        /* CERTIFICATIONS */
+        .certification {
+            margin-bottom: 5px;
+            font-size: 10px;
+        }
+
+        .certification strong {
+            color: #17365d;
+        }
+
+        /* TWO COLUMN BOTTOM */
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .simple-text {
+            font-size: 10.5px;
+            color: #333;
+        }
+
+        /* PRINT */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 210mm;
+                min-height: 297mm;
+                margin: 0;
+                box-shadow: none;
+                padding: 15mm;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+        }
+
+        /* MOBILE */
+        @media screen and (max-width: 800px) {
+            .resume {
+                width: 95%;
+                margin: 10px auto;
+                padding: 25px;
+            }
+
+            .education-item {
+                grid-template-columns: 1fr;
+                gap: 3px;
+            }
+
+            .bottom-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="name">JYOTI KUMARI</div>
+
+        <div class="contact">
+            <span>📍 Ghazipur, Uttar Pradesh</span>
+            <span>📞 6306310615</span>
+            <span>✉ Jyotizna7@gmail.com</span>
+        </div>
+
+        <div class="career-title">
+            MBA STUDENT &nbsp; • &nbsp;
+            FINANCE &nbsp; • &nbsp;
+            BUSINESS DEVELOPMENT &nbsp; • &nbsp;
+            HUMAN RESOURCES
+        </div>
+    </header>
+
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section class="section">
+        <h2 class="section-title">Professional Summary</h2>
+
+        <p class="summary">
+            MBA student with a B.Com background and hands-on internship experience
+            across Finance, Business Development and Human Resources. Experienced in
+            financial workflow analysis, market trend analysis, business development
+            support, talent acquisition, onboarding documentation, employee engagement,
+            interview coordination and administrative support. Strong in communication,
+            coordination, financial analysis, strategic planning, recruiting, time
+            management and professional email management.
+        </p>
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="section">
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="experience">
+            <div class="job-title">
+                Finance & Business Development Intern
+                <span class="company">
+                    | House of Pleasurable Textiles (HOPT) | Varanasi
+                </span>
+            </div>
+
+            <div class="date">
+                June 2026 – August 2026 | 60-day Internship
+            </div>
+
+            <ul>
+                <li>
+                    Supported business development initiatives and company growth
+                    activities during a 60-day professional internship.
+                </li>
+
+                <li>
+                    Analyzed financial workflows and market trends to identify
+                    business opportunities and areas for operational improvement.
+                </li>
+
+                <li>
+                    Collaborated with cross-functional teams under the Handicrafts
+                    and Carpet Sector Skill Council (HCSSC) framework.
+                </li>
+
+                <li>
+                    Gained practical exposure to finance, market expansion strategies,
+                    stock-related operations and professional business coordination.
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="experience">
+            <div class="job-title">
+                HR Intern
+                <span class="company">
+                    | Unessa Foundation | Remote
+                </span>
+            </div>
+
+            <div class="date">
+                March 2026 – April 2026
+            </div>
+
+            <ul>
+                <li>
+                    Assisted in sourcing, screening and shortlisting candidate
+                    profiles for open positions.
+                </li>
+
+                <li>
+                    Supported onboarding processes and maintained digital employee
+                    records and documentation.
+                </li>
+
+                <li>
+                    Coordinated interview schedules, candidate follow-ups and
+                    internal communication activities.
+                </li>
+
+                <li>
+                    Helped organize foundation events and volunteer drives while
+                    supporting day-to-day administrative tasks.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="section">
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-item">
+            <div class="degree">
+                Master of Business Administration (MBA)
+            </div>
+
+            <div class="edu-date">
+                2025 – 2027
+            </div>
+
+            <div class="institute">
+                Technical Education Research Institute Post-Graduate College,
+                affiliated with Dr. A.P.J. Abdul Kalam Technical University
+            </div>
+        </div>
+
+
+        <div class="education-item">
+            <div class="degree">
+                Bachelor of Commerce (B.Com)
+            </div>
+
+            <div class="edu-date">
+                2022 – 2025 | 7.86 CGPA
+            </div>
+
+            <div class="institute">
+                Post-Graduate College, affiliated with Veer Bahadur Singh
+                Purvanchal University
+            </div>
+        </div>
+
+
+        <div class="education-item">
+            <div class="degree">
+                Senior Secondary School
+            </div>
+
+            <div class="edu-date">
+                Passed 2020 | 81%
+            </div>
+
+            <div class="institute">
+                Sun Shine Public School, CBSE Board
+            </div>
+        </div>
+
+
+        <div class="education-item">
+            <div class="degree">
+                High School
+            </div>
+
+            <div class="edu-date">
+                86.08%
+            </div>
+
+            <div class="institute">
+                Sun Shine Public School
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CORE SKILLS -->
+    <section class="section">
+        <h2 class="section-title">Core Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">Communication</div>
+            <div class="skill">Team Leadership</div>
+            <div class="skill">Coordination</div>
+            <div class="skill">Financial Analysis</div>
+            <div class="skill">Strategic Planning</div>
+            <div class="skill">Human Resources</div>
+            <div class="skill">Talent Acquisition</div>
+            <div class="skill">Recruiting</div>
+            <div class="skill">Interpersonal Communication</div>
+            <div class="skill">Time Management</div>
+            <div class="skill">Email Management</div>
+            <div class="skill">Quick Learner</div>
+            <div class="skill">Basic IoT</div>
+
+        </div>
+    </section>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="section">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <p class="technical">
+            <strong>ADCA (2025):</strong>
+            MS Word, MS Excel, MS PowerPoint, Tally Prime ERP
+            <br>
+
+            <strong>CCC – NIELIT (2025):</strong>
+            LibreOffice Writer, Calc & Impress, IoT fundamentals
+            and cybersecurity overview.
+        </p>
+    </section>
+
+
+    <!-- PROJECT -->
+    <section class="section">
+        <h2 class="section-title">Project</h2>
+
+        <div class="project-title">
+            Foldable Portable Study Table in Briefcase Style
+            – Creative & Innovation / Mini Project
+        </div>
+
+        <ul>
+            <li>
+                Designed a compact, lightweight study table that folds into
+                a portable briefcase shape for easy transport and storage.
+            </li>
+
+            <li>
+                Addressed the need for ergonomic study spaces in small rooms
+                and for people who travel frequently.
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+    <section class="section">
+        <h2 class="section-title">Certifications & Achievements</h2>
+
+        <div class="certification">
+            • <strong>Financial Literacy Certification – Wadhwani Foundation</strong>
+            | July 2026 | Completed 4-hour training on core financial concepts
+            and fundamentals.
+        </div>
+
+        <div class="certification">
+            • <strong>Get Real With Myntra Quiz – Naukri Campus & Myntra</strong>
+            | April 2026 | Participated in national-level quiz on e-commerce,
+            fashion retail and business awareness.
+        </div>
+
+        <div class="certification">
+            • <strong>Certificate Course in Human Resources
+            (Talent Acquisition) – Reliance Foundation Skilling Academy</strong>
+            | March 2026 | Completed 120-hour online skilling program.
+        </div>
+
+        <div class="certification">
+            • <strong>Certificate of Excellence: Financial Literacy Program –
+            NISM & Kotak Securities</strong>
+            | October 2025 | Achieved 83.0% in post-program assessment quiz.
+        </div>
+    </section>
+
+
+    <!-- LANGUAGES & INTERESTS -->
+    <section class="section bottom-grid">
+
+        <div>
+            <h2 class="section-title">Languages</h2>
+
+            <p class="simple-text">
+                English &nbsp; • &nbsp; Hindi (Proficiency)
+            </p>
+        </div>
+
+
+        <div>
+            <h2 class="section-title">Interests</h2>
+
+            <p class="simple-text">
+                Nature Photography &nbsp; • &nbsp;
+                Reading Books &nbsp; • &nbsp;
+                Drawing
+            </p>
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>
